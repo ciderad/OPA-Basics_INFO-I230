@@ -1,6 +1,7 @@
+# Conditional Access Control (RBAC)
+# --------------------------------
 
 package play
-
 
 default allow := false
 
@@ -21,6 +22,6 @@ is_in_indiana if {
 }
 
 is_valid_time if {
-  input.hour >= 8 and
+  input.hour >= 8
   input.hour <= 20
 }
